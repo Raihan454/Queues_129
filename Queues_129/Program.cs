@@ -115,7 +115,7 @@ namespace Queues_129
         }
         static void Main(string[] args)
         {
-            Queue queue = new Queue();
+            Program queue = new Program();
             char ch;
             while (true)
             {
@@ -131,7 +131,14 @@ namespace Queues_129
                     Console.WriteLine();
                     switch (ch)
                     {
-
+                        case '1':
+                            {
+                                Console.WriteLine("Enter a number:  ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
                     }
                 }
             }
