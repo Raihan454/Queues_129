@@ -158,6 +158,10 @@ namespace Queues_129
                             break;
                     }
                 }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
+                }
             }
         }
     }
